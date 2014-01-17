@@ -7,7 +7,7 @@ def stringtohash(str)
 end
 
 def arrtohash(arr)
-	arr.map {|x| stringtohash(x)}.inject Hash.new, :merge
+	arr.map {|x| stringtohash(x)}.inject(:merge)
 end
 
 def str_to_hash(str)
